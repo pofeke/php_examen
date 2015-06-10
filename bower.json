@@ -1,0 +1,24 @@
+{
+  "name": "arnaudpoffe",
+  "version": "0.0.0",
+  "authors": [
+    "Arnaud Poffé 'arnaud@g-mvoe.be'"
+  ],
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "dependencies": {
+    "bootstrap": "*",
+    "jquery": "^2.0.0",
+    "underscore": "*"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

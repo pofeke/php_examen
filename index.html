@@ -8,9 +8,9 @@
         <title>In the Pocket</title>
         <meta name="description" content="">
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/TimeCircles.css">
-        <link rel="stylesheet" type="text/css" href="css/jquery.classycountdown.min.css" />
+        <link rel="stylesheet" href="css/load.css">
         <link rel="stylesheet" href="css/main.css">
+        <meta name="keywords" content="permis théorique pratique in the pocket belgique questions tests quiz feu vert">
         <link rel="shortcut icon" href="images/favicon.png" />
 
         <!--[if lt IE 9]>
@@ -32,8 +32,9 @@
 
         <![endif]-->
 
+
     </head>
-    <body id="bodyTheorique">
+    <body id="top">
 
         <noscript>
             <div id="errorJs">
@@ -49,6 +50,8 @@
                 </div>
             </div>
         </noscript>
+
+        <div id="load" class="introLoading"></div>
 
         <div class="mobileDetection">
             
@@ -72,16 +75,43 @@
 
         </div>
 
-        <!-- HEADER -->
-        
-            <div class="navFixed questionFixed notFixed">
+        <!-- CONNECT -->
 
-                <h1><a href="indexconnected.html">in the pocket</a></h1>
+        <div class="connect">
+
+            <button class="closeConnect">close</button>
+
+            <section class="closeConnectHover hover">fermer</section>
+            
+            <h1>connect</h1>
+
+            <form action="index.html" onsubmit="return false">
+                <fieldset>
+                    <label for="username">nom d'utilisateur</label>
+                    <input type="text" name="username" class="username" id="username">
+                    <label for="password">mot de passe</label>
+                    <input type="password" name="password" class="password" id="password">
+                    <p class="errors passwordFlase">Utilisateur ou mot de passe érronés</p>
+                    <input type="submit" name="submit" value="connexion" class="submit">
+                </fieldset>
+            </form>
+
+        </div>
+
+        <!-- END CONNECT -->
+
+
+        <!-- HEADER -->
+
+        <div class="navFixed" id="indexNav">
+
+                <h1><a href="index.html">in the pocket</a></h1>
                 
                 <div class="tool">
-                    <p>arnaud</p>
 
-                    <div class="avatar">avatar</div>
+                    <p class="connecthover">se connecter</p>
+
+                    <div class="avatar notconnected">avatar</div>
 
                     <button class="menu">
                         <img src="images/menu_back.png" class="menuImg" alt="">
@@ -92,9 +122,27 @@
 
             </div>
 
-        <!-- END HEADER -->
+        <header class="indexHeader">
 
-        <!-- NAV -->
+            <img src="images/logo_intro.png" alt="" class="logo_intro">
+
+            <p class="tagline">Votre compagnon de route pour la réussite de votre permis de conduire</p>
+
+            <section class="alert">
+                <div class="align_alert">
+                    <!-- <button class="closeAlert">close</button> -->
+                    <section class="closeAlertHover hover">fermer</section>
+                    <img src="images/warning.png" alt="" class="warning">
+                    <h1>changement de la loi sur le taux d'alcoolémie</h1>
+                    <p>Depuis le 12 février 2015, le taux d’alcoolémie légal est passé de 0,08 M/G à 0,05 M/G</p>
+                    <a href="info.html">plus d'infos</a>
+                </div>
+            </section>
+            
+        </header>
+
+        <!-- END EADER -->
+
 
         <!-- NAV -->
 
@@ -111,13 +159,13 @@
                 <div class="toolsIno">
 
                     <button class="option">option</button>
-                    <button class="profil"><</button>
+                    <button class="profil notshow"><</button>
                     
-                    <div class="avatar">avatar</div>
+                    <div class="avatar notconnected">avatar</div>
 
                     <div class="infoConnected">
                         <p>Bonjour</p>
-                        <h1>arnaud</h1>
+                        <h1>inconnu</h1>
                     </div>  
 
                 </div>
@@ -236,107 +284,486 @@
 
         <!-- END PROFIL -->
 
-        <!-- END PROFIL -->
 
+        <!-- CONTENT -->
 
-        <!-- MAIN QUESTION -->
+        <main>
 
-        <main class="questionMain" id="question-view">
+            <div class="align">
 
-            <div class="tempory">
+                <h1>le concept</h1>
 
-                <div class="alignTempory">
+                <section class="left">
+                    <p>In the pocket vous propose de vous entraîner pour votre examen théorique du code de la route belge. Ce service est entièrement gratuit et le restera.</p>
 
-                    <p class="serie"><span class="confirmed">débutant</span> Série confirmé</p>
+                    <p> In the Pocket est basé sur le principe de communauté. </p>
 
-                    <h1>Règles d'utilisation</h1>
+                    <p>Toute personne peut rajouter des questions sur le code. C’est ensemble que nous construisons ce site. </p>
+                </section>
 
-                    <p>Un test comporte 50 questions. Vous avez <span>40 secondes</span> pour y répondre. Si vous ne voulez pas attendre la fin du compte à rebours vous pouvez directement accéder à la question suivante en cliquant sur le <span>bouton turbo</span>.</p>
+                <section class="right">
+                    <p>Via un profil vous pouvez analyser tous les résultats de vos tests théoriques. De plus, In the Pocket offre aussi un service éducatif pour le permis pratique à travers des parcours étudiés en fonction de votre région et de votre niveau d'apprentissage.</p>
+                    <p>Informez-vous aussi des nouvelles lois en matière de roulage.</p>
+                </section>
 
-                    <p>Toute réponse non validée ne sera pas prise en compte.</p>
+                
+            </div>  
 
-                    <p>Attention parfois <span>plusieurs réponses</span> doivent être validées pour obtenir le point.</p>
+            <section class="car">car</section>
 
-                    <p>Ce questionnaire constitue un bon entrainement mais n'est pas un test agréé par l'organisme de contrôle GOCA.</p>
-                    
-                    <p>Que la force soit avec vous.</p>
+            <div class="align"  id="theorique">
+                
+                <h1>examen théorique</h1>
 
-                    <p><span>Veuillez ne pas rafraichir la page pendant toute la durée de votre test.</span></p>
+                <section class="left theorique">
+                    <p>Que vous soyez débutant ou expert en la matière, il y a toujours un test prêt à démarrer pour vous.</p>
+                </section>
 
-                    <button class="go">Turbo</button>
+                <ul class="clear">
+                    <li>
+                        <img src="images/stop1.png" alt="">
+                        <h2>série 1</h2>
+                        <h3>débutant</h3>
+                        <a href="theorique_debutant.html">commencer</a>
+                    </li>
+                    <li>
+                        <img src="images/stop2.png" alt="">
+                        <h2>série 2</h2>
+                        <h3>intermédiare</h3>
+                        <a href="theorique_intermediaire.html">commencer</a>
+                    </li>
+                    <li>
+                        <img src="images/stop3.png" alt="">
+                        <h2>série 3</h2>
+                        <h3>confirmé</h3>
+                        <a href="theorique_confirmed.html">commencer</a>
+                    </li>
+                </ul>
 
-                    <div id="countdownFirst" class="compteurFirst"></div>
-                </div>
+                <section class="left theorique TopPratique" id="pratique">
+
+                    <h1>examen pratique</h1>
+
+                    <p>Apprenez à dénicher les pièges que la route peut vous réserver en visualisant les parcours.</p>
+                </section>
+
+                <section class="pratique">
+                    <ul>
+                        <li><button class="activeButton">brabant wallon</button></li>
+                        <li><button>namur</button></li>
+                        <li><button>liège</button></li>
+                        <li><button>bruxelles</button></li>
+                        <li><button>hainaut</button></li>
+                        <li><button>luxembourg</button></li>
+                    </ul>
+
+                    <div class="align_pratique">
+
+                        <ul class="slider">
+                            <li class="slide">
+                                <ul>
+                                    <li>
+                                        <h4>wavre - ottignies</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>25 - 30 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue"style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Corbais - Wavre</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>20 - 25 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Jodoigne - Beauvechain</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>20 - 25 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Waterloo - Lasne</h4>
+                                            <p><span><img src="images/clock.png" alt=""></span>30 - 35 min</p>
+                                            <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                            <div class="map">
+
+                                            </div>
+                                            <a href="parcours.html">découvrir</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="slide">
+                                <ul>
+                                    <li>
+                                        <h4>Namur - Gembloux</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>30 - 35 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Couvin - Walcourt</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>25 - 30 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Rochefort - Ciney</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>25 - 30 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="slide">
+                                <ul>
+                                    <li>
+                                        <h4>Aywaille - Spa</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>15 - 20 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Liège - Bassenge</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>25 - 30 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Neupré - Amay</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>30 - 35 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Malmedy - Theux</h4>
+                                            <p><span><img src="images/clock.png" alt=""></span>20 - 25 min</p>
+                                            <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                            <div class="map">
+
+                                            </div>
+                                            <a href="parcours.html">découvrir</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="slide">
+                                <ul>
+                                    <li>
+                                        <h4>Anderlecht - Forest</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>25 - 30 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Evere - Etterbeek</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>25 - 30 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Ixelles - Jette</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>30 - 35 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    </ul>
+                                </li>
+
+                                <li class="slide">
+                                <ul>
+                                    <li>
+                                        <h4>Tournai - Ath</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>20 - 25 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Mons - Soignies</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>15 - 20 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Chimay - Beaumont</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>25 - 30 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Celles - Rumes</h4>
+                                            <p><span><img src="images/clock.png" alt=""></span>20 - 25 min</p>
+                                            <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                            <div class="map">
+
+                                            </div>
+                                            <a href="parcours.html">découvrir</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="slide">
+                                <ul>
+                                    <li>
+                                        <h4>Libramont - Léglise</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>30 - 35 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Chiny - Bouillon</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>20 - 35 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue style="opacity:.4;""></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    <li>
+                                        <h4>Bastogne - Gouvy</h4>
+                                        <p><span><img src="images/clock.png" alt=""></span>25 - 30 min</p>
+                                        <ul class="wheel">
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                            <li><img src="images/wheel.png" alt="roue" style="opacity:.4;"></li>
+                                        </ul>
+                                        <div class="map">
+                                        </div>
+                                        <a href="parcours.html">découvrir</a>
+                                    </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                    </div>
+
+                </section>
 
             </div>
 
-
         </main>
+
+        <!-- END CONTENT -->
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            <div class="alignFooter">
+
+                <ul>
+                    <li><a href="credits.html">crédits</a></li>
+                    <li><a href="http://ibsr.be/fr" target='_blank'>IBSR</a></li>
+                    <li><a href="http://www.goca.be/fr" target='_blank'>GOCA</a></li>
+                </ul>
+
+                <small>© Projet développé par Arnaud - ESIAJ 2015</small>
+
+            </div>
+        </footer>
 
         <div class="konami">
             <button class="closeConnect closeKonami">close</button>
             <img src="images/konami.png" alt="">
         </div>
 
-        <!-- END MAIN QUESTION -->
-
-        <script type="javascript/template" id="question-view-template">
-                    <div class="question">
-
-                        <div class="alignQuestion">
-
-                                <p class="countParent">Question : <span class="count"></span> / 50</p>
-
-                                <p><%= model.question.question_text %></p>
-
-                            <ul>
-                                <li><button class="list-group-item" id="first">A : <%= model.answers[0].answer_text %></button></li>
-                                <li><button class="list-group-item">B : <%= model.answers[1].answer_text %></button></li>
-                                <li><button class="list-group-item">C : <%= model.answers[2].answer_text %></button></li>
-                                <li><button class="list-group-item">D : <%= model.answers[3].answer_text %></button></li>
-                            </ul>
-
-                            <div id="toolQuestion">
-
-                                <div id="countdown"></div>
-
-                                <button id="send-button" class="send-button btn btn-default"><img src="images/turbo.png" alt="turbo" id="turbo">turbo</button>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                     <div class="imgQuestion" style="background:url(images/<%= model.question.question_img %>.jpg)">
-                        <!--<img src="images/<%= model.question.question_img %>.jpg" alt="<%= model.question.question_text %>">-->
-                    </div>
-
-        </script>
+        <!-- END FOOTER -->
 
         <script src="//use.typekit.net/zei7bth.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/html5.js"></script>
+        <script src="js/jquery.imageScroll.min.js"></script>
         <script src="js/chart.min.js"></script>
-        <script src="js/TimeCircles.js"></script>
-        <script src="js/jquery.classycountdown.js"></script>
-        <script src="js/jquery.knob.js"></script>
-        <script src="js/jquery.throttle.js"></script>
-        <script type="text/javascript" src="js/vendor/underscore.js"></script>
-        <script src="js/question_requete.js"></script>
-        <script src="js/countdown.js" id="timer"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/spin.min.js"></script>
+        <script src="js/load.js"></script>
         <script src="js/main.js"></script>
 
         <script type="text/javascript">
 
-            $('#countdownFirst').ClassyCountdown({
-            theme: "white-very-wide",
-            end: $.now() + 40,
+            $(document).on('ready', function() {
+                $("#load").introLoader({
+                    animation: {
+                        name: 'lettersLoader',
+                        options: {
+                            ease: "easeInOutCirc",
+                            exitFx:'slideUp',
+                            style: 'light',
+                            delayBefore: 500,
+                            delayAfter: 0, 
+                            exitTime: 300,
+                            loaderText: 'IN THE POCKET', 
+                            lettersDelayTime: 0
+                        }
+                    },
+                    spinJs: {
+                    lines: 8, // The number of lines to draw
+                    length: 10, // The length of each line
+                    radius: 30, // The radius of the inner circle
+                    width: 8, // The line thickness
+                    color: '#fff' // #rgb or #rrggbb or array of colors
+                    }
+                });
             });
 
 
         </script>
+
 
     </body>
 </html>
