@@ -1,0 +1,334 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+body.home{
+	background: url(../image_site/bg.jpg);
+	background-size: cover;
+}
+
+body.login{
+	background: url(../image_site/pattern.png);
+	background-size: cover;
+}
+
+form input {
+	display: block;
+	border: none;
+}
+
+form{
+	width: 980px;
+	margin: 200px auto 0 auto;
+	border: 1px solid white;
+	border-radius: 3px;
+	overflow: hidden;
+	padding: 24px;
+}
+
+form h1{
+	color: #ce2454;
+	font-size: 24px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+
+form p{
+	width: 50%;
+	padding: 24px 0;
+	margin: 0 auto;
+}
+
+input{
+	width: 300px; 
+	float: left;
+	padding: 12px 24px;
+}
+
+input:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+input[type="submit"]{
+	display: block;
+	width: 140px;
+	padding: 12px 24px;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-radius: 3px;
+
+	background: #73b52d;
+
+}
+
+input[type="submit"]:hover{
+	background: #619327;
+}
+
+label{
+	display: none;
+}
+
+.discover{
+	display: block;
+	width: 320px;
+	margin: 24px auto;
+	text-decoration: none;
+	padding: 12px 24px;
+
+	background: #2789b2;
+	text-align: center;
+	color: white;
+	border-radius: 3px;
+}
+
+.discover:hover,
+.admin:hover,
+.upload:hover,
+.ok a:hover,
+.sidebar a:hover,
+.logout:hover{
+	background: #1f6d8d;
+}
+
+.admin{
+	position: fixed;
+	right: 25px;
+	top: 25px;
+	text-decoration: none;
+	color: white;
+	background: #2789b2;
+	padding: 6px 12px;
+	font-size: 12px;
+	border-radius: 3px;
+}
+
+.logout{
+	position: fixed;
+	right: 80px;
+	top: 25px;
+	text-decoration: none;
+	color: white;
+	background: #2789b2;
+	padding: 6px 12px;
+	font-size: 12px;
+	border-radius: 3px;
+}
+
+.upload{
+	position: fixed;
+	left: 25px;
+	top: 25px;
+	text-decoration: none;
+	color: white;
+	background: #2789b2;
+	padding: 6px 12px;
+	font-size: 12px;
+	border-radius: 3px;
+}
+
+
+.login label{
+	display: block;
+	color: white;
+	padding: 12px 0;
+	margin-left: 5%;
+}
+
+.login input{
+	float: initial;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.login form{
+	width: 400px;
+	padding: 24px;
+}
+
+
+.login form input[type="submit"]{
+	float: inherit;
+	margin: 24px auto;
+	width: 40%;
+}
+
+#gallery{
+	width: 50%;
+	margin: 0 auto;
+	padding: 48px 0;
+}
+
+#gallery h1{
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	padding: 24px 0;
+}
+
+#gallery img{
+	width: 100%;
+}
+
+.ok{
+	width: 800px;
+	margin: 200px auto 0 auto;
+	overflow: hidden;
+}
+
+.ok p{
+	display: block;
+	color: white;
+	width: 100%;
+	margin: 0 auto 0 auto;
+	font-size: 24px;
+	letter-spacing: 1px;
+	text-align:center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.ok p span{
+	font-size: 14px;
+	margin: 0;
+	font-weight: 400;
+	text-transform: initial;
+}
+
+.ok a{
+	width: 40%;
+	margin-right: 5%;
+	display: block;
+	text-align:center;
+	text-decoration: none;
+	color: white;
+	padding: 12px 2.5%;
+	border-radius: 3px;
+	background: blue;
+	float: left;
+	margin-top: 24px;
+	background: #2789b2;
+}
+
+.ok a:last-child{
+	margin-right: 0;
+}
+
+.content,
+.sidebar{
+	width: 800px;
+	margin: 0 auto;
+}
+
+.content{
+	margin: 24px auto;
+}
+
+.content h1,
+.content h2{
+	margin-bottom: 24px;
+	color: white;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.content p{
+	color: white;
+}
+
+.sidebar a{
+	width: 40%;
+	margin-right: 5%;
+	display: block;
+	text-align:center;
+	text-decoration: none;
+	color: white;
+	padding: 12px 2.5%;
+	border-radius: 3px;
+	background: blue;
+	float: left;
+	margin-top: 24px;
+	background: #2789b2;
+	margin-bottom: 24px;
+}
+
+
+
+.content a,
+#gallery a.next{
+	width: 200px;
+	margin-right: 5%;
+	display: block;
+	text-align:center;
+	text-decoration: none;
+	color: white;
+	padding: 12px 2.5%;
+	border-radius: 3px;
+	margin-top: 24px;
+	background: #f82447;
+	margin-bottom: 24px;
+}
+
+#gallery{
+	position: relative;
+}
+
+#gallery a.next{
+	width: 140px;
+}
+
+#gallery a.next{
+	position: absolute;
+	bottom: 12px;
+	right: 0;
+}
+
+#gallery a.previous{
+	position: absolute;
+	bottom: 12px;
+	right: initial !important;
+	left: 40px;
+}
+
+
+.content a:hover{
+	background: #ce1d3a;
+}
+
+.content img{
+	width: 100%;
+}
+
+.login p{
+	color: white;
+	width: 90%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 12px 0;
+	font-size: 10px;
+}
+
+.error{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	color: #d54131;
+}
+
+
+
+
+
