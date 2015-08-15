@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<title>Upload Image Lover</title>
+	<title>Login</title>
 
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -55,6 +55,9 @@
 				$image->file_new_name_body = $imageName;
 				$image->image_text = $caption;
 				$image->image_text_background = '#000000';
+				$image->image_resize   = true;
+				$image->image_ratio_y  = true;
+				$image->image_x        = 800;
 			    $image->process('../images');
 			    if ($image->processed) {
 			        $userId = registerUser($ip, $db);
