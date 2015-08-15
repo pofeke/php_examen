@@ -7,7 +7,7 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<title>Login</title>
+	<title>Gallery Image Lover</title>
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
